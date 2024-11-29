@@ -13,6 +13,8 @@
     ·
     <a href="#getting-started">Getting Started</a>
     ·
+    <a href="#usage">Usage</a>
+    .
     <a href="#c-specifications">C Specification</a>
     ·
     <a href="https://github.com/alexeev-prog/gnux/blob/main/LICENSE">License</a>
@@ -51,13 +53,20 @@ New, expanded, smart and modernized utilities. Written in C, wrapped in Python.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
-pyEchoNext is available on [PyPI](https://pypi.org/project/gnuxlinux). Simply install the package into your project environment with PIP:
+GNUXLINUX is available on [PyPI](https://pypi.org/project/gnuxlinux). Simply install the package into your project environment with PIP:
 
 ```bash
 pip install gnuxlinux
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage
+Execute command in shell:
+
+```bash
+gnuxexec <command>
+```
 
 ## C Specifications
 GNUX C PyExtensions architecture:

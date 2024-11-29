@@ -9,10 +9,7 @@ def execute_trans(file: str):
 	print("end")
 
 
-files = [
-	"index.md",
-	"projectdesign.md"
-]
+files = ["index.md", "projectdesign.md"]
 
 for file in files:
 	execute_trans(file)
