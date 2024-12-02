@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gnuxlinux"
-version = "0.1.1"
+version = "0.1.2"
 description = "gnu utilities eXtended"
 authors = ["alexeev-prog <alexeev.dev@mail.ru>"]
 license = "GNU LGPL 2.1"
@@ -36,12 +36,6 @@ max-complexity = 5
 [tool.ruff.lint.isort]
 force-single-line = true
 
-[tool.ruff.format]
-quote-style = "double"
-indent-style = "tab"
-skip-magic-trailing-comma = false
-line-ending = "auto"
-
 [build-system]
 requires = ["poetry-core", 'setuptools']
 build-backend = "poetry.core.masonry.api"
@@ -49,3 +43,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 gnuxlinux = "gnuxlinux.__main__:main"
 gnuxexec = "gnuxlinux.exec:main"
+gnuxmkdir = "gnuxlinux.mkdir:main"

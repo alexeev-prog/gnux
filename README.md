@@ -62,10 +62,29 @@ pip install gnuxlinux
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
-Execute command in shell:
+Execute any command:
 
 ```bash
-gnuxexec <command>
+gnuxlinux --help
+```
+
+### pkg
+Get info about GNUXLINUX package:
+
+```bash
+gnuxlinux pkg <package_name>
+```
+
+### exec
+
+```bash
+gnuxlinux execute <command>
+```
+
+### mkdir
+
+```bash
+gnuxlinux mkdir <dir_name> <--ignore-exists> <--slug-enable> <--slug-symbol "_">
 ```
 
 ## C Specifications
@@ -74,12 +93,17 @@ GNUX C PyExtensions architecture:
 ```
 ext
 └── src
+    ├── gnuxmkdir.c
     └── gnuxmodule.c
 ```
 
 ### gnuxmodule.c
 
  + `exec_shell_command(command)` - execute a shell command.
+
+### gnuxmkdir.c
+
+ + `gnux_mkdir(dir_name, ignore_exists)` - create directory.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
