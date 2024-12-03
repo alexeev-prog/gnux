@@ -87,6 +87,12 @@ gnuxlinux execute <command>
 gnuxlinux mkdir <dir_name> <--ignore-exists> <--slug-enable> <--slug-symbol "_">
 ```
 
+### cat
+
+```bash
+gnuxlinux cat <filename>
+```
+
 ## C Specifications
 GNUX C PyExtensions architecture:
 

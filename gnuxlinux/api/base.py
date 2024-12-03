@@ -45,7 +45,7 @@ class GNUX_RegistryManager:
         if package is None:
             return None
 
-        print(f'Call package: {package_name}')
+        print(f"Call package: {package_name}")
 
         result = package.pyobject(*args, **kwargs)
         return result

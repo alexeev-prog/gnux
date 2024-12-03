@@ -1,4 +1,4 @@
-"""Build script."""
+r"""Build script."""
 
 from setuptools import Extension
 from setuptools.command.build_ext import build_ext
@@ -6,6 +6,7 @@ from setuptools.command.build_ext import build_ext
 extensions = [
     Extension("gnuxlinux.ext", sources=["ext/src/gnuxmodule.c"]),
     Extension("gnuxlinux.mkdir", sources=["ext/src/gnuxmkdir.c"]),
+    Extension("gnuxlinux.cat", sources=["ext/src/gnuxcat.c"]),
 ]
 
 

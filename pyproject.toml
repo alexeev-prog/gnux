@@ -42,5 +42,3 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 gnuxlinux = "gnuxlinux.__main__:main"
-gnuxexec = "gnuxlinux.exec:main"
-gnuxmkdir = "gnuxlinux.mkdir:main"
