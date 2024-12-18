@@ -1,4 +1,4 @@
-r"""Build script."""
+"""Build script."""
 
 from setuptools import Extension
 from setuptools.command.build_ext import build_ext
@@ -18,7 +18,7 @@ class ExtBuilder(build_ext):
     def run(self):
         try:
             build_ext.run(self)
-        except (DistutilsPlatformError, FileNotFoundError) as ex:
+        except Exception as ex:
             print(ex)
 
     def build_extension(self, ext):

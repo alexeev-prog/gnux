@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from dataclasses import field
 from typing import Any
+from typing import Callable
 from typing import List
 
 
@@ -8,7 +9,7 @@ from typing import List
 class Package:
     name: str
     description: str
-    pyobject: Any
+    pyobject: Callable
     uuid: str
 
 

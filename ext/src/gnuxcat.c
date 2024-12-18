@@ -1,4 +1,5 @@
 #define PY_SSIZE_T_CLEAN
+#define Py_GIL_DISABLED
 #include <Python.h>
 #include <stdio.h>
 #include <stdlib.h>

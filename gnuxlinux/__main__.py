@@ -42,6 +42,9 @@ def execute(command: tuple):
 @cli.command()
 @click.argument("filename")
 def cat(filename: str):
+    """
+    View file content and info
+    """
     if not Path(filename).exists():
         print(f"File not exists: {filename}")
         return
